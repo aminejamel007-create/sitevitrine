@@ -1,5 +1,5 @@
 [build]
-  command = "vite build"
+  command = "echo Skipping build and publishing existing dist"
   publish = "dist"
 
 [[redirects]]
