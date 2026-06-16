@@ -28,11 +28,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-5 group">
-              <AnimatedHatLogo size={28} />
-              <span className="font-serif text-lg text-white tracking-wide">
-                Monsieur <span className="text-periwinkle">Style</span>
-              </span>
+            <Link to="/" className="flex items-center mb-5 group">
+              <AnimatedHatLogo size={80} />
             </Link>
             <p className="text-sm leading-relaxed mb-6 text-white/60">
               Precision tailoring for a life well-dressed. Our Sousse atelier has been crafting exceptional menswear for over two decades.
