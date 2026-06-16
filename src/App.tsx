@@ -5,9 +5,15 @@ import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import BackToTop from './components/BackToTop'
 import CustomCursor from './components/CustomCursor'
+import { CartProvider } from './context/CartContext'
 import Home from './pages/Home'
 import About from './pages/About'
 import Collections from './pages/Collections'
+import CollectionDetail from './pages/CollectionDetail'
+import ProductDetail from './pages/ProductDetail'
+import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
+import Profile from './pages/Profile'
 import Lookbook from './pages/Lookbook'
 import Journal from './pages/Journal'
 import JournalDetail from './pages/JournalDetail'
@@ -30,7 +36,7 @@ export default function App() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <CartProvider>
       <CustomCursor />
       <ScrollToTop />
       <Header />
@@ -41,6 +47,11 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/collections" element={<Collections />} />
+              <Route path="/collections/:id" element={<CollectionDetail />} />
+              <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="/lookbook" element={<Lookbook />} />
               <Route path="/journal" element={<Journal />} />
               <Route path="/journal/:slug" element={<JournalDetail />} />
@@ -51,6 +62,6 @@ export default function App() {
       </main>
       <Footer />
       <BackToTop />
-    </div>
+    </CartProvider>
   )
 }

@@ -58,12 +58,12 @@ export const values = [
 ]
 
 export const collections = [
-  { id: 'suits-blazers', icon: 'shirt', title: 'Suits & Blazers', description: 'Discover handcrafted business suits and tailored blazers designed for modern gentlemen. Premium fabrics, precise cuts, and timeless elegance.', image: suit1, link: '#' },
-  { id: 'light-summer-suits', icon: 'sparkles', title: 'Light & Summer Suits', description: 'Lightweight tailoring crafted for warm-weather sophistication. Breathable fabrics, relaxed construction, and effortless elegance.', image: suit2, link: '#' },
-  { id: 'statement-formal-suits', icon: 'heart', title: 'Statement Formal Suits', description: 'Bold tailored suits designed for weddings, galas, and special occasions. Distinctive colors with refined craftsmanship.', image: suit4, link: '#' },
-  { id: 'our-boutique', icon: 'scissors', title: 'Our Boutique', description: 'Experience the Monsieur Style showroom, where premium fabrics, expert guidance, and personalized service come together.', image: atelierImg, link: '#' },
-  { id: 'bespoke-tailoring', icon: 'umbrella', title: 'Bespoke Tailoring', description: 'Fully customized garments crafted to your measurements and preferences. From fabric selection to final fitting.', image: suitsImg, link: '#' },
-  { id: 'evening-collection', icon: 'sparkles', title: 'Evening Collection', description: 'Sophisticated eveningwear and occasion suits tailored to leave a lasting impression.', image: suit4, link: '#' },
+  { id: 'suits-blazers', icon: 'shirt', title: 'Suits & Blazers', description: 'Discover handcrafted business suits and tailored blazers designed for modern gentlemen. Premium fabrics, precise cuts, and timeless elegance.', image: suit1, link: '/collections/suits-blazers' },
+  { id: 'light-summer-suits', icon: 'sparkles', title: 'Light & Summer Suits', description: 'Lightweight tailoring crafted for warm-weather sophistication. Breathable fabrics, relaxed construction, and effortless elegance.', image: suit2, link: '/collections/light-summer-suits' },
+  { id: 'statement-formal-suits', icon: 'heart', title: 'Statement Formal Suits', description: 'Bold tailored suits designed for weddings, galas, and special occasions. Distinctive colors with refined craftsmanship.', image: suit4, link: '/collections/statement-formal-suits' },
+  { id: 'our-boutique', icon: 'scissors', title: 'Our Boutique', description: 'Experience the Monsieur Style showroom, where premium fabrics, expert guidance, and personalized service come together.', image: atelierImg, link: '/collections/our-boutique' },
+  { id: 'bespoke-tailoring', icon: 'umbrella', title: 'Bespoke Tailoring', description: 'Fully customized garments crafted to your measurements and preferences. From fabric selection to final fitting.', image: suitsImg, link: '/collections/bespoke-tailoring' },
+  { id: 'evening-collection', icon: 'sparkles', title: 'Evening Collection', description: 'Sophisticated eveningwear and occasion suits tailored to leave a lasting impression.', image: suit4, link: '/collections/evening-collection' },
 ]
 
 export const processSteps = [
@@ -85,6 +85,27 @@ export const lookbookImages = [
   { id: 8, src: suit4, alt: 'Hand-stitching details', category: 'Bespoke' },
   { id: 9, src: suit3, alt: 'Smart casual suits', category: 'Casual' },
   { id: 10, src: suit2, alt: 'Signature Monsieur Style look', category: 'Casual' },
+]
+
+export const products = [
+  { id: 1, name: 'Navy Tailored Business Suit', description: 'Classic single-breasted navy suit in premium wool. Features notch lapels, two-button closure, and full canvas construction.', price: 1200, images: [suit1], collectionId: 'suits-blazers', sizes: ['46', '48', '50', '52', '54'], colors: ['Navy', 'Charcoal'], rating: 4.8 },
+  { id: 2, name: 'Charcoal Executive Blazer', description: 'A refined charcoal blazer crafted from Italian wool. Perfect for boardroom meetings and formal occasions.', price: 950, images: [suit2], collectionId: 'suits-blazers', sizes: ['46', '48', '50', '52'], colors: ['Charcoal', 'Navy'], rating: 4.7 },
+  { id: 3, name: 'Beige Summer Linen Suit', description: 'Lightweight linen suit in warm beige. Breathable and elegant, designed for Mediterranean summers.', price: 850, images: [suit2], collectionId: 'light-summer-suits', sizes: ['46', '48', '50', '52'], colors: ['Beige', 'Light Grey'], rating: 4.6 },
+  { id: 4, name: 'Cotton Safari Jacket', description: 'Unstructured cotton jacket ideal for warm-weather sophistication. Pair with chinos or tailored trousers.', price: 720, images: [suit3], collectionId: 'light-summer-suits', sizes: ['48', '50', '52'], colors: ['Khaki', 'Navy'], rating: 4.5 },
+  { id: 5, name: 'Burgundy Statement Suit', description: 'A bold burgundy suit for weddings and galas. Satin peak lapels and a tapered silhouette command attention.', price: 1500, images: [suit4], collectionId: 'statement-formal-suits', sizes: ['46', '48', '50', '52', '54'], colors: ['Burgundy', 'Deep Red'], rating: 4.9 },
+  { id: 6, name: 'Classic Tuxedo', description: 'Timeless black tuxedo with satin peak lapels. The definitive choice for black-tie events.', price: 1800, images: [suitsImg], collectionId: 'statement-formal-suits', sizes: ['46', '48', '50', '52'], colors: ['Black', 'Midnight Blue'], rating: 4.9 },
+  { id: 7, name: 'Bespoke Custom Suit', description: 'A fully personalized suit from first sketch to final stitch. Choose every detail — fabric, lining, buttons, lapels.', price: 2500, images: [suit1], collectionId: 'bespoke-tailoring', sizes: ['Custom'], colors: ['Any'], rating: 5.0 },
+  { id: 8, name: 'Bespoke Tailored Shirt', description: 'Custom shirt crafted to your exact measurements. Premium Egyptian cotton with your choice of collar and cuff styles.', price: 350, images: [stitchImg], collectionId: 'bespoke-tailoring', sizes: ['Custom'], colors: ['White', 'Blue', 'Striped'], rating: 4.8 },
+  { id: 9, name: 'Evening Dinner Jacket', description: 'Elegant dinner jacket in midnight blue with satin shawl collar. Perfect for evening occasions.', price: 1400, images: [suit4], collectionId: 'evening-collection', sizes: ['46', '48', '50', '52'], colors: ['Midnight Blue', 'Black'], rating: 4.7 },
+  { id: 10, name: 'Velvet Evening Blazer', description: 'Luxurious velvet blazer in deep burgundy. A sophisticated statement piece for evening events.', price: 1300, images: [suit4], collectionId: 'evening-collection', sizes: ['46', '48', '50', '52'], colors: ['Burgundy', 'Forest Green'], rating: 4.6 },
+]
+
+export const reviews = [
+  { id: 1, productId: 1, name: 'Ahmed B.', rating: 5, text: 'The fit is impeccable. Best suit I have ever owned.', date: 'May 2026' },
+  { id: 2, productId: 1, name: 'Karim M.', rating: 4, text: 'Excellent quality and craftsmanship. Worth every dinar.', date: 'April 2026' },
+  { id: 3, productId: 5, name: 'Youssef T.', rating: 5, text: 'Wore this to my wedding — received endless compliments.', date: 'March 2026' },
+  { id: 4, productId: 6, name: 'Mehdi K.', rating: 5, text: 'Perfect tuxedo. The satin lapels are stunning.', date: 'February 2026' },
+  { id: 5, productId: 7, name: 'Amine J.', rating: 5, text: 'The bespoke experience is unmatched. My suit feels like a second skin.', date: 'January 2026' },
 ]
 
 export const testimonials = [

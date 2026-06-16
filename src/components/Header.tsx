@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, User } from 'lucide-react'
+import { Menu, X, User, ShoppingBag } from 'lucide-react'
 import AnimatedHatLogo from './AnimatedHatLogo'
 import { navLinks } from '../data/content'
+import { useCart } from '../context/CartContext'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const { pathname } = useLocation()
+  const { totalItems } = useCart()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -49,8 +51,19 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+              <Link to="/profile" className="text-white/70 hover:text-periwinkle transition-colors p-2 relative" aria-label="My Account">
+                <User size={18} />
+              </Link>
+              <Link to="/cart" className="text-white/70 hover:text-periwinkle transition-colors p-2 relative" aria-label="Shopping Cart">
+                <ShoppingBag size={18} />
+                {totalItems > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-periwinkle text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                    {totalItems}
+                  </span>
+                )}
+              </Link>
               <Link to="/contact" className="btn-primary !py-2.5 !px-6 text-xs">
-                <User size={14} /> Book Consultation
+                Book Consultation
               </Link>
             </nav>
 
@@ -94,6 +107,14 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
+                <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/10">
+                  <Link to="/cart" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-white/80 hover:text-periwinkle transition-colors text-sm">
+                    <ShoppingBag size={16} /> Cart {totalItems > 0 && `(${totalItems})`}
+                  </Link>
+                  <Link to="/profile" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-white/80 hover:text-periwinkle transition-colors text-sm">
+                    <User size={16} /> Account
+                  </Link>
+                </div>
                 <Link to="/contact" className="btn-primary !py-3 mt-4 justify-center">
                   Book Consultation
                 </Link>

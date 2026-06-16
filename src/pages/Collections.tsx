@@ -30,17 +30,17 @@ export default function Collections() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collections.map((c, i) => (
               <AnimatedSection key={c.id} delay={i * 0.1}>
-                <div className="group relative overflow-hidden rounded-sm h-[550px]">
+                <Link to={c.link} className="group block relative overflow-hidden rounded-sm h-[550px]">
                   <img src={c.image} alt={c.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
                     <h3 className="font-serif text-2xl text-white mb-3">{c.title}</h3>
                     <p className="text-white/60 text-sm mb-6 leading-relaxed">{c.description}</p>
-                    <Link to={c.link} className="inline-flex items-center gap-2 text-periwinkle text-xs uppercase tracking-wider font-sans hover:text-white transition-colors">
-                      Enquire Now <ArrowRight size={12} />
-                    </Link>
+                    <span className="inline-flex items-center gap-2 text-periwinkle text-xs uppercase tracking-wider font-sans group-hover:text-white transition-colors">
+                      View Collection <ArrowRight size={12} />
+                    </span>
                   </div>
-                </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>

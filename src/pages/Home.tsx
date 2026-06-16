@@ -113,7 +113,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collections.slice(0, 3).map((c, i) => (
               <AnimatedSection key={c.id} delay={i * 0.1}>
-                <Link to="/collections" className="group block relative overflow-hidden rounded-sm h-[500px]">
+                <Link to={c.link} className="group block relative overflow-hidden rounded-sm h-[500px]">
                   <img src={c.image} alt={c.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
