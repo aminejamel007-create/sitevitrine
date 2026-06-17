@@ -32,7 +32,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo only */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center -ml-4">
               <AnimatedHatLogo size={120} />
             </Link>
 
@@ -63,7 +63,7 @@ export default function Header() {
                 )}
               </Link>
               <Link to="/contact" className="btn-primary !py-2.5 !px-6 text-xs">
-                Book Consultation
+                Book
               </Link>
             </nav>
 
@@ -116,7 +116,7 @@ export default function Header() {
                   </Link>
                 </div>
                 <Link to="/contact" className="btn-primary !py-3 mt-4 justify-center">
-                  Book Consultation
+                  Book
                 </Link>
               </div>
             </motion.nav>
