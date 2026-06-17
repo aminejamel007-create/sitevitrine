@@ -7,11 +7,11 @@ import { Code } from 'lucide-react'
 const links = {
   collections: [
     { label: 'Suits & Blazers', path: '/collections' },
-    { label: 'Shirts & Knitwear', path: '/collections' },
-    { label: 'Wedding & Formalwear', path: '/collections' },
-    { label: 'Bespoke Tailoring', path: '/collections' },
-    { label: 'Outerwear & Overcoats', path: '/collections' },
-    { label: 'Accessories', path: '/collections' },
+    { label: 'Light & Summer Suits', path: '/collections' },
+    { label: 'Statement Formal Suits', path: '/collections' },
+    { label: 'Watches', path: '/collections' },
+    { label: 'Glasses', path: '/collections' },
+    { label: 'Card Pockets', path: '/collections' },
   ],
   quick: [
     { label: 'About', path: '/about' },

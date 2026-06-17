@@ -5,6 +5,20 @@ import suit1 from '../assets/suit1.png'
 import suit2 from '../assets/suit2.png'
 import suit3 from '../assets/suit3.png'
 import suit4 from '../assets/suit4.png'
+import suit5 from '../assets/suit5.png'
+import suit6 from '../assets/suit6.png'
+import suit7 from '../assets/suit7.png'
+import suit8 from '../assets/suit8.png'
+import suit9 from '../assets/suit9.png'
+import watch1 from '../assets/wwatch1.png'
+import watch2 from '../assets/watch2.png'
+import watch3 from '../assets/watch3.png'
+import glasses1 from '../assets/glasses1.png'
+import glasses2 from '../assets/glasses2.png'
+import glasses3 from '../assets/glasses3.png'
+import cardPocket1 from '../assets/cardpocket1.png'
+import cardPocket2 from '../assets/cardpocket2.png'
+import cardPocket3 from '../assets/cardpocket3.png'
 
 export const siteInfo = {
   name: 'Monsieur Style',
@@ -61,9 +75,9 @@ export const collections = [
   { id: 'suits-blazers', icon: 'shirt', title: 'Suits & Blazers', description: 'Discover handcrafted business suits and tailored blazers designed for modern gentlemen. Premium fabrics, precise cuts, and timeless elegance.', image: suit1, link: '/collections/suits-blazers' },
   { id: 'light-summer-suits', icon: 'sparkles', title: 'Light & Summer Suits', description: 'Lightweight tailoring crafted for warm-weather sophistication. Breathable fabrics, relaxed construction, and effortless elegance.', image: suit2, link: '/collections/light-summer-suits' },
   { id: 'statement-formal-suits', icon: 'heart', title: 'Statement Formal Suits', description: 'Bold tailored suits designed for weddings, galas, and special occasions. Distinctive colors with refined craftsmanship.', image: suit4, link: '/collections/statement-formal-suits' },
-  { id: 'our-boutique', icon: 'scissors', title: 'Our Boutique', description: 'Experience the Monsieur Style showroom, where premium fabrics, expert guidance, and personalized service come together.', image: atelierImg, link: '/collections/our-boutique' },
-  { id: 'bespoke-tailoring', icon: 'umbrella', title: 'Bespoke Tailoring', description: 'Fully customized garments crafted to your measurements and preferences. From fabric selection to final fitting.', image: suitsImg, link: '/collections/bespoke-tailoring' },
-  { id: 'evening-collection', icon: 'sparkles', title: 'Evening Collection', description: 'Sophisticated eveningwear and occasion suits tailored to leave a lasting impression.', image: suit4, link: '/collections/evening-collection' },
+  { id: 'watches', icon: 'clock', title: 'Watches', description: 'Premium timepieces crafted for the discerning gentleman. Swiss movements, elegant designs, timeless sophistication.', image: watch1, link: '/collections/watches' },
+  { id: 'glasses', icon: 'eye', title: 'Glasses', description: 'Handcrafted eyewear frames combining optical precision with luxury style. From classic acetate to modern titanium.', image: glasses1, link: '/collections/glasses' },
+  { id: 'card-pockets', icon: 'credit-card', title: 'Card Pockets', description: 'Exquisite leather card holders and pocket organisers. Slim, refined, and crafted from the finest full-grain leather.', image: cardPocket1, link: '/collections/card-pockets' },
 ]
 
 export const processSteps = [
@@ -94,10 +108,19 @@ export const products = [
   { id: 4, name: 'Cotton Safari Jacket', description: 'Unstructured cotton jacket ideal for warm-weather sophistication. Pair with chinos or tailored trousers.', price: 720, images: [suit3], collectionId: 'light-summer-suits', sizes: ['48', '50', '52'], colors: ['Khaki', 'Navy'], rating: 4.5 },
   { id: 5, name: 'Burgundy Statement Suit', description: 'A bold burgundy suit for weddings and galas. Satin peak lapels and a tapered silhouette command attention.', price: 1500, images: [suit4], collectionId: 'statement-formal-suits', sizes: ['46', '48', '50', '52', '54'], colors: ['Burgundy', 'Deep Red'], rating: 4.9 },
   { id: 6, name: 'Classic Tuxedo', description: 'Timeless black tuxedo with satin peak lapels. The definitive choice for black-tie events.', price: 1800, images: [suitsImg], collectionId: 'statement-formal-suits', sizes: ['46', '48', '50', '52'], colors: ['Black', 'Midnight Blue'], rating: 4.9 },
-  { id: 7, name: 'Bespoke Custom Suit', description: 'A fully personalized suit from first sketch to final stitch. Choose every detail — fabric, lining, buttons, lapels.', price: 2500, images: [suit1], collectionId: 'bespoke-tailoring', sizes: ['Custom'], colors: ['Any'], rating: 5.0 },
-  { id: 8, name: 'Bespoke Tailored Shirt', description: 'Custom shirt crafted to your exact measurements. Premium Egyptian cotton with your choice of collar and cuff styles.', price: 350, images: [stitchImg], collectionId: 'bespoke-tailoring', sizes: ['Custom'], colors: ['White', 'Blue', 'Striped'], rating: 4.8 },
-  { id: 9, name: 'Evening Dinner Jacket', description: 'Elegant dinner jacket in midnight blue with satin shawl collar. Perfect for evening occasions.', price: 1400, images: [suit4], collectionId: 'evening-collection', sizes: ['46', '48', '50', '52'], colors: ['Midnight Blue', 'Black'], rating: 4.7 },
-  { id: 10, name: 'Velvet Evening Blazer', description: 'Luxurious velvet blazer in deep burgundy. A sophisticated statement piece for evening events.', price: 1300, images: [suit4], collectionId: 'evening-collection', sizes: ['46', '48', '50', '52'], colors: ['Burgundy', 'Forest Green'], rating: 4.6 },
+  { id: 7, name: 'Bespoke Custom Suit', description: 'A fully personalized suit from first sketch to final stitch. Choose every detail — fabric, lining, buttons, lapels.', price: 2500, images: [suit5], collectionId: 'suits-blazers', sizes: ['Custom'], colors: ['Any'], rating: 5.0 },
+  { id: 8, name: 'Premium Wool Overcoat', description: 'Luxurious wool overcoat in charcoal. Single-breasted with peak lapels, perfect for layering over suits.', price: 1600, images: [suit6], collectionId: 'suits-blazers', sizes: ['48', '50', '52', '54'], colors: ['Charcoal', 'Navy'], rating: 4.7 },
+  { id: 9, name: 'Ivory Dinner Jacket', description: 'Elegant ivory dinner jacket for summer formal occasions. Shawl collar with satin trim and mother-of-pearl buttons.', price: 1400, images: [suit7], collectionId: 'statement-formal-suits', sizes: ['46', '48', '50', '52'], colors: ['Ivory', 'White'], rating: 4.8 },
+  { id: 10, name: 'Navy Double-Breasted Suit', description: 'Timeless double-breasted navy suit with wide peak lapels. A powerful silhouette for the modern gentleman.', price: 1350, images: [suit8], collectionId: 'suits-blazers', sizes: ['46', '48', '50', '52', '54'], colors: ['Navy', 'Midnight Blue'], rating: 4.9 },
+  { id: 11, name: 'Swiss Automatic Chronograph', description: 'Premium Swiss automatic chronograph with sapphire crystal and leather strap. Water-resistant to 100m.', price: 3200, images: [watch1], collectionId: 'watches', sizes: ['One Size'], colors: ['Silver', 'Gold', 'Rose Gold'], rating: 4.9 },
+  { id: 12, name: 'Classic Dress Watch', description: 'Elegant thin dress watch with sunburst dial and alligator leather strap. Hand-wound mechanical movement.', price: 2800, images: [watch2], collectionId: 'watches', sizes: ['One Size'], colors: ['Silver', 'Black'], rating: 4.8 },
+  { id: 13, name: 'Aviator Pilot Watch', description: 'Inspired by vintage cockpit instruments. Large crown, luminous hands, and a robust stainless steel case.', price: 1900, images: [watch3], collectionId: 'watches', sizes: ['One Size'], colors: ['Stainless', 'Bronze'], rating: 4.7 },
+  { id: 14, name: 'Acetate Optical Frame', description: 'Handcrafted acetate optical frame with gold-plated temples. Lightweight and comfortable for daily wear.', price: 650, images: [glasses1], collectionId: 'glasses', sizes: ['S', 'M', 'L'], colors: ['Black', 'Tortoise', 'Navy'], rating: 4.6 },
+  { id: 15, name: 'Titanium Rimless Glasses', description: 'Ultra-lightweight titanium rimless frames with adjustable nose pads. Minimalist and sophisticated.', price: 850, images: [glasses2], collectionId: 'glasses', sizes: ['M', 'L'], colors: ['Silver', 'Gunmetal', 'Gold'], rating: 4.7 },
+  { id: 16, name: 'Round Vintage Sunglasses', description: 'Classic round sunglasses in hand-polished acetate. Green CR-39 lenses with UV400 protection.', price: 550, images: [glasses3], collectionId: 'glasses', sizes: ['M', 'L'], colors: ['Black', 'Havana', 'Tortoise'], rating: 4.5 },
+  { id: 17, name: 'Slim Leather Card Holder', description: 'Hand-stitched full-grain leather card holder with three slots. Fits up to 6 cards. Made in Tuscany.', price: 250, images: [cardPocket1], collectionId: 'card-pockets', sizes: ['One Size'], colors: ['Black', 'Brown', 'Navy'], rating: 4.8 },
+  { id: 18, name: 'Executive Card Wallet', description: 'Premium calfskin card wallet with coin pocket and RFID protection. Slim profile fits any jacket.', price: 320, images: [cardPocket2], collectionId: 'card-pockets', sizes: ['One Size'], colors: ['Black', 'Dark Brown', 'Burgundy'], rating: 4.7 },
+  { id: 19, name: 'Minimalist Metal Card Case', description: 'Brushed titanium card case with spring-loaded mechanism. Holds 4-8 cards in a ultra-slim 6mm profile.', price: 180, images: [cardPocket3], collectionId: 'card-pockets', sizes: ['One Size'], colors: ['Titanium', 'Black', 'Rose Gold'], rating: 4.6 },
 ]
 
 export const reviews = [
@@ -105,7 +128,9 @@ export const reviews = [
   { id: 2, productId: 1, name: 'Karim M.', rating: 4, text: 'Excellent quality and craftsmanship. Worth every dinar.', date: 'April 2026' },
   { id: 3, productId: 5, name: 'Youssef T.', rating: 5, text: 'Wore this to my wedding — received endless compliments.', date: 'March 2026' },
   { id: 4, productId: 6, name: 'Mehdi K.', rating: 5, text: 'Perfect tuxedo. The satin lapels are stunning.', date: 'February 2026' },
-  { id: 5, productId: 7, name: 'Amine J.', rating: 5, text: 'The bespoke experience is unmatched. My suit feels like a second skin.', date: 'January 2026' },
+  { id: 5, productId: 11, name: 'Amine J.', rating: 5, text: 'The chronograph is a masterpiece. Exceptional craftsmanship.', date: 'January 2026' },
+  { id: 6, productId: 14, name: 'Sami H.', rating: 4, text: 'Elegant frames, very comfortable for all-day wear.', date: 'December 2025' },
+  { id: 7, productId: 17, name: 'Youssef T.', rating: 5, text: 'Perfect slim card holder. The leather is sublime.', date: 'November 2025' },
 ]
 
 export const testimonials = [
