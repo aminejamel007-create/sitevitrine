@@ -8,17 +8,22 @@ export default function Cart() {
   const { state, removeItem, updateQuantity, totalItems, totalPrice } = useCart()
 
   return (
-    <section className="pt-32 pb-20 px-4 lg:px-8 min-h-screen">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-center justify-between mb-12">
-          <div>
-             <Link to="/collections" className="inline-flex items-center gap-2 text-periwinkle hover:text-periwinkle/80 transition-colors text-sm mb-4">
-              <ArrowLeft size={14} /> Continue Shopping
-            </Link>
-            <h1 className="font-serif text-4xl text-periwinkle">Shopping Cart</h1>
-            <p className="text-navy/50 text-sm mt-1">{totalItems} {totalItems === 1 ? 'item' : 'items'}</p>
+    <>
+      <section className="bg-navy pt-32 pb-12 px-4 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <Link to="/collections" className="inline-flex items-center gap-2 text-periwinkle hover:text-periwinkle/80 transition-colors text-sm mb-4">
+                <ArrowLeft size={14} /> Continue Shopping
+              </Link>
+              <h1 className="font-serif text-4xl text-white">Shopping Cart</h1>
+              <p className="text-white/50 text-sm mt-1">{totalItems} {totalItems === 1 ? 'item' : 'items'}</p>
+            </div>
           </div>
         </div>
+      </section>
+      <section className="pb-20 px-4 lg:px-8 min-h-screen">
+      <div className="max-w-5xl mx-auto">
 
         {state.items.length === 0 ? (
           <div className="text-center py-32">
@@ -102,5 +107,6 @@ export default function Cart() {
         )}
       </div>
     </section>
+    </>
   )
 }

@@ -15,17 +15,22 @@ export default function Profile() {
   const [editing, setEditing] = useState(false)
 
   return (
-    <section className="pt-32 pb-20 px-4 lg:px-8 min-h-screen">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-12">
-          <div className="w-16 h-16 rounded-full bg-periwinkle/20 flex items-center justify-center">
-            <User size={28} className="text-periwinkle" />
-          </div>
-          <div>
-            <h1 className="font-serif text-4xl text-periwinkle">My Account</h1>
-            <p className="text-navy/50 text-sm">{profile.name}</p>
+    <>
+      <section className="bg-navy pt-32 pb-12 px-4 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-16 h-16 rounded-full bg-periwinkle/20 flex items-center justify-center">
+              <User size={28} className="text-periwinkle" />
+            </div>
+            <div>
+              <h1 className="font-serif text-4xl text-white">My Account</h1>
+              <p className="text-white/60 text-sm">{profile.name}</p>
+            </div>
           </div>
         </div>
+      </section>
+      <section className="pb-20 px-4 lg:px-8 min-h-screen">
+      <div className="max-w-5xl mx-auto">
 
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-8">
@@ -98,5 +103,6 @@ export default function Profile() {
         </div>
       </div>
     </section>
+    </>
   )
 }
