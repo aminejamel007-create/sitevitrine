@@ -12,10 +12,10 @@ export default function Cart() {
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-between mb-12">
           <div>
-            <Link to="/collections" className="inline-flex items-center gap-2 text-periwinkle hover:text-navy transition-colors text-sm mb-4">
+             <Link to="/collections" className="inline-flex items-center gap-2 text-periwinkle hover:text-periwinkle/80 transition-colors text-sm mb-4">
               <ArrowLeft size={14} /> Continue Shopping
             </Link>
-            <h1 className="font-serif text-4xl text-navy">Shopping Cart</h1>
+            <h1 className="font-serif text-4xl text-periwinkle">Shopping Cart</h1>
             <p className="text-navy/50 text-sm mt-1">{totalItems} {totalItems === 1 ? 'item' : 'items'}</p>
           </div>
         </div>

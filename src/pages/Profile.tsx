@@ -22,7 +22,7 @@ export default function Profile() {
             <User size={28} className="text-periwinkle" />
           </div>
           <div>
-            <h1 className="font-serif text-4xl text-navy">My Account</h1>
+            <h1 className="font-serif text-4xl text-periwinkle">My Account</h1>
             <p className="text-navy/50 text-sm">{profile.name}</p>
           </div>
         </div>

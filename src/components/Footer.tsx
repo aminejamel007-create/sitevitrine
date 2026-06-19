@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react'
 import AnimatedHatLogo from './AnimatedHatLogo'
 import { siteInfo } from '../data/content'
-import { Code } from 'lucide-react'
 
 const links = {
   collections: [
@@ -94,12 +93,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-6">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-white/40">
           <span>{siteInfo.copyright}</span>
-          <span className="flex items-center gap-1">
-            <Code size={12} /> Built by{' '}
-            <a href={siteInfo.developer.url} target="_blank" rel="noopener noreferrer" className="text-periwinkle hover:text-white transition-colors">
-              {siteInfo.developer.name}
-            </a>
-          </span>
+          <span>Monsieur Style — Sousse, Tunisia</span>
         </div>
       </div>
     </footer>
